@@ -22,7 +22,7 @@ export default {
     //  这里直接在created函数中使用axios的get请求向后台获取用户信息数据
     //  在实际开发中可以卸载apiadress.js中配置具体的method对应的路径和接口，这个
     //  后面完善功能的情况下再进行介绍
-    this.$ajax('http://localhost:8088/book/getBooks').then(res => {
+    this.$ajax('').then(res => {
       this.tableData = res.data.result
       console.log(res.data.result)
     }).catch(function (error) {
